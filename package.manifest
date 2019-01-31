@@ -1,0 +1,17 @@
+{
+	"gridEditors": [
+		{
+			"name": "Accordion Block",
+			"alias": "accordionBlock",
+			"view": "/App_Plugins/AccordionBlock/AccordionBlockView.html",
+			"render": "/App_Plugins/AccordionBlock/AccordionBlockRender.cshtml",
+			"icon": "icon-umb-contour"
+		}
+	],
+	"javascript": [
+		"/App_Plugins/AccordionBlock/AccordionBlock.Controller.js"
+	],
+	"css": [
+		"/App_Plugins/AccordionBlock/AccordionBlock.css"
+	]
+}
