@@ -1,0 +1,2 @@
+# components_umbraco_accordion_block
+Umbraco accordion block
