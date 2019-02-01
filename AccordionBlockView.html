@@ -58,7 +58,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="umb-add-row accordion-tab__add-btn" ng-if="!sortMode">
+	<div class="umb-add-row accordion-tab__add-btn" ng-if="!sortMode && ((control.value.length > 0 && control.active) || control.value.length == 0)">
 		Add new Tab<br/>
 		<a href="" class="iconBox" data-ng-click="addItem()">
 			<i class=" icon icon-add" title="Add new tab"></i>
