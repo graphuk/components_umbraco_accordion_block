@@ -1,12 +1,12 @@
 (function () {
-	(accordion => {
+	((accordion, accordionItem, accordionTitle, accordionContent) => {
 		for (let i = 0; i < accordion.length; i++) {
-			const items = accordion[i].querySelectorAll('.accordion__item');
+			const items = accordion[i].querySelectorAll(accordionItem);
+			const activeClass = accordionItem.replace('.', '') + '_expanded';
 
 			[].forEach.call(items, item => {
-				const trigger = item.querySelector('.accordion__title');
-				const activeClass = 'accordion__item_expanded';
-				const content = item.querySelector('.accordion__content');
+				const trigger = item.querySelector(accordionTitle);
+				const content = item.querySelector(accordionContent);
 
 				trigger.addEventListener('click', () => {
 					content.style.height = content.scrollHeight + 'px';
@@ -29,5 +29,5 @@
 				});
 			});
 		}
-	})(document.querySelectorAll('.accordion'));
+	})(document.querySelectorAll('.js-accordion'), '.accordion__item', '.accordion__title', '.accordion__content');
 }());
